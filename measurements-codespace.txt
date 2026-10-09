@@ -1,0 +1,396 @@
+make: Nothing to be done for 'all'.
+=== x1 measure.sh  vantage=codespace ===
+date      2026-10-09T12:38:50Z
+hostname  codespaces-31a964
+uname     Linux codespaces-31a964 6.8.0-1064-azure #72~22.04.1-Ubuntu SMP Wed Jul 22 23:39:45 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+commit    9944745
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet 10.0.0.242/16 metric 100 brd 10.0.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+=== public address  12:38:50 ===
+Trial 1
+  DNS:        11.502 ms (checkip.amazonaws.com -> 44.212.101.251)
+  Connect:    63.833 ms
+  TCP:        local 10.0.0.242:42870 -> remote 44.212.101.251:80
+  First byte: 64.390 ms
+  Transfer:   0.017 ms, 12 body bytes, 5.657 Mbit/s
+  Status:     HTTP/1.1 200 
+Minimum connect time: 63.833 ms
+Median connect time:  63.833 ms
+4.155.45.97
+
+=== latency cdn  12:38:51 ===
+Trial 1
+  DNS:        3.306 ms (example.com -> 104.20.23.154)
+  Connect:    5.247 ms
+  TCP:        local 10.0.0.242:33106 -> remote 104.20.23.154:80
+  First byte: 15.443 ms
+  Transfer:   0.201 ms, 577 body bytes, 22.933 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.356 ms (example.com -> 172.66.147.243)
+  Connect:    4.887 ms
+  TCP:        local 10.0.0.242:49232 -> remote 172.66.147.243:80
+  First byte: 11.584 ms
+  Transfer:   1.092 ms, 577 body bytes, 4.227 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.384 ms (example.com -> 172.66.147.243)
+  Connect:    4.814 ms
+  TCP:        local 10.0.0.242:49238 -> remote 172.66.147.243:80
+  First byte: 10.702 ms
+  Transfer:   1.216 ms, 577 body bytes, 3.795 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        0.352 ms (example.com -> 172.66.147.243)
+  Connect:    4.864 ms
+  TCP:        local 10.0.0.242:49240 -> remote 172.66.147.243:80
+  First byte: 11.491 ms
+  Transfer:   0.261 ms, 577 body bytes, 17.672 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.433 ms (example.com -> 104.20.23.154)
+  Connect:    4.969 ms
+  TCP:        local 10.0.0.242:33114 -> remote 104.20.23.154:80
+  First byte: 12.303 ms
+  Transfer:   1.426 ms, 577 body bytes, 3.238 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 4.814 ms
+Median connect time:  4.887 ms
+
+=== latency utah  12:38:51 ===
+Trial 1
+  DNS:        33.875 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.798 ms
+  TCP:        local 10.0.0.242:56466 -> remote 198.60.22.13:80
+  First byte: 31.042 ms
+  Transfer:   0.012 ms, 1198 body bytes, 804.567 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.391 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.867 ms
+  TCP:        local 10.0.0.242:56472 -> remote 198.60.22.13:80
+  First byte: 30.914 ms
+  Transfer:   0.010 ms, 1198 body bytes, 972.205 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.331 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    32.345 ms
+  TCP:        local 10.0.0.242:56474 -> remote 198.60.22.13:80
+  First byte: 30.793 ms
+  Transfer:   0.004 ms, 1198 body bytes, 2321.705 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        0.396 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.736 ms
+  TCP:        local 10.0.0.242:56490 -> remote 198.60.22.13:80
+  First byte: 30.783 ms
+  Transfer:   0.005 ms, 1198 body bytes, 2083.931 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.395 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.819 ms
+  TCP:        local 10.0.0.242:56494 -> remote 198.60.22.13:80
+  First byte: 30.865 ms
+  Transfer:   0.003 ms, 1198 body bytes, 2855.781 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 30.736 ms
+Median connect time:  30.819 ms
+
+=== latency berkeley  12:38:51 ===
+Trial 1
+  DNS:        37.486 ms (mirrors.ocf.berkeley.edu -> 169.229.200.70)
+  Connect:    24.152 ms
+  TCP:        local 10.0.0.242:59264 -> remote 169.229.200.70:80
+  First byte: 24.136 ms
+  Transfer:   0.300 ms, 1198 body bytes, 31.971 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.302 ms (mirrors.ocf.berkeley.edu -> 169.229.200.70)
+  Connect:    24.109 ms
+  TCP:        local 10.0.0.242:59270 -> remote 169.229.200.70:80
+  First byte: 24.131 ms
+  Transfer:   0.088 ms, 1198 body bytes, 109.202 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.386 ms (mirrors.ocf.berkeley.edu -> 169.229.200.70)
+  Connect:    24.123 ms
+  TCP:        local 10.0.0.242:59286 -> remote 169.229.200.70:80
+  First byte: 24.157 ms
+  Transfer:   0.113 ms, 1198 body bytes, 84.949 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        0.351 ms (mirrors.ocf.berkeley.edu -> 169.229.200.70)
+  Connect:    24.674 ms
+  TCP:        local 10.0.0.242:59300 -> remote 169.229.200.70:80
+  First byte: 24.673 ms
+  Transfer:   0.094 ms, 1198 body bytes, 101.649 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.320 ms (mirrors.ocf.berkeley.edu -> 169.229.200.70)
+  Connect:    24.049 ms
+  TCP:        local 10.0.0.242:59312 -> remote 169.229.200.70:80
+  First byte: 24.051 ms
+  Transfer:   0.080 ms, 1198 body bytes, 119.427 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 24.049 ms
+Median connect time:  24.123 ms
+
+=== latency rochester  12:38:51 ===
+Trial 1
+  DNS:        96.333 ms (mirrors.rit.edu -> 129.21.171.72)
+  Connect:    75.454 ms
+  TCP:        local 10.0.0.242:43166 -> remote 129.21.171.72:80
+  First byte: 89.843 ms
+  Transfer:   0.014 ms, 1198 body bytes, 692.185 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.463 ms (mirrors.rit.edu -> 129.21.171.72)
+  Connect:    75.394 ms
+  TCP:        local 10.0.0.242:43174 -> remote 129.21.171.72:80
+  First byte: 75.347 ms
+  Transfer:   0.010 ms, 1198 body bytes, 922.425 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.378 ms (mirrors.rit.edu -> 129.21.171.72)
+  Connect:    75.650 ms
+  TCP:        local 10.0.0.242:43180 -> remote 129.21.171.72:80
+  First byte: 75.489 ms
+  Transfer:   0.005 ms, 1198 body bytes, 2070.873 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        0.391 ms (mirrors.rit.edu -> 129.21.171.72)
+  Connect:    76.069 ms
+  TCP:        local 10.0.0.242:43192 -> remote 129.21.171.72:80
+  First byte: 76.140 ms
+  Transfer:   0.007 ms, 1198 body bytes, 1384.371 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.629 ms (mirrors.rit.edu -> 129.21.171.72)
+  Connect:    75.918 ms
+  TCP:        local 10.0.0.242:43208 -> remote 129.21.171.72:80
+  First byte: 75.906 ms
+  Transfer:   0.094 ms, 1198 body bytes, 101.919 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 75.394 ms
+Median connect time:  75.650 ms
+
+=== latency germany  12:38:52 ===
+Trial 1
+  DNS:        164.442 ms (ftp.fau.de -> 131.188.12.211)
+  Connect:    162.215 ms
+  TCP:        local 10.0.0.242:48952 -> remote 131.188.12.211:80
+  First byte: 162.262 ms
+  Transfer:   0.057 ms, 1198 body bytes, 167.065 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.359 ms (ftp.fau.de -> 131.188.12.211)
+  Connect:    156.346 ms
+  TCP:        local 10.0.0.242:48968 -> remote 131.188.12.211:80
+  First byte: 156.440 ms
+  Transfer:   0.140 ms, 1198 body bytes, 68.398 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.364 ms (ftp.fau.de -> 131.188.12.211)
+  Connect:    153.174 ms
+  TCP:        local 10.0.0.242:48978 -> remote 131.188.12.211:80
+  First byte: 153.127 ms
+  Transfer:   0.007 ms, 1198 body bytes, 1394.442 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        1.146 ms (ftp.fau.de -> 131.188.12.211)
+  Connect:    156.380 ms
+  TCP:        local 10.0.0.242:48986 -> remote 131.188.12.211:80
+  First byte: 156.760 ms
+  Transfer:   0.006 ms, 1198 body bytes, 1494.697 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.662 ms (ftp.fau.de -> 131.188.12.211)
+  Connect:    155.651 ms
+  TCP:        local 10.0.0.242:48992 -> remote 131.188.12.211:80
+  First byte: 155.860 ms
+  Transfer:   0.159 ms, 1198 body bytes, 60.438 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 153.174 ms
+Median connect time:  156.346 ms
+
+=== latency japan  12:38:54 ===
+Trial 1
+  DNS:        113.087 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.270 ms
+  TCP:        local 10.0.0.242:34496 -> remote 150.65.7.130:80
+  First byte: 107.139 ms
+  Transfer:   0.067 ms, 1198 body bytes, 142.500 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.395 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.935 ms
+  TCP:        local 10.0.0.242:34500 -> remote 150.65.7.130:80
+  First byte: 107.507 ms
+  Transfer:   0.019 ms, 1198 body bytes, 514.301 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.418 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.258 ms
+  TCP:        local 10.0.0.242:34504 -> remote 150.65.7.130:80
+  First byte: 106.785 ms
+  Transfer:   0.063 ms, 1198 body bytes, 152.838 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 4
+  DNS:        0.315 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.367 ms
+  TCP:        local 10.0.0.242:34514 -> remote 150.65.7.130:80
+  First byte: 106.892 ms
+  Transfer:   0.018 ms, 1198 body bytes, 518.783 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 5
+  DNS:        0.359 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.596 ms
+  TCP:        local 10.0.0.242:34528 -> remote 150.65.7.130:80
+  First byte: 106.838 ms
+  Transfer:   0.082 ms, 1198 body bytes, 116.618 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 106.258 ms
+Median connect time:  106.367 ms
+
+=== download utah  12:38:55 ===
+Trial 1
+  DNS:        0.507 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.843 ms
+  TCP:        local 10.0.0.242:49792 -> remote 198.60.22.13:80
+  First byte: 33.056 ms
+  Transfer:   334.867 ms, 13332733 body bytes, 318.520 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.414 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.869 ms
+  TCP:        local 10.0.0.242:49796 -> remote 198.60.22.13:80
+  First byte: 31.049 ms
+  Transfer:   331.065 ms, 13332733 body bytes, 322.178 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.354 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    30.898 ms
+  TCP:        local 10.0.0.242:49802 -> remote 198.60.22.13:80
+  First byte: 30.812 ms
+  Transfer:   376.578 ms, 13332733 body bytes, 283.240 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 30.843 ms
+Median connect time:  30.869 ms
+
+=== download japan  12:38:56 ===
+Trial 1
+  DNS:        0.604 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    107.117 ms
+  TCP:        local 10.0.0.242:43180 -> remote 150.65.7.130:80
+  First byte: 181.355 ms
+  Transfer:   3320.430 ms, 13332733 body bytes, 32.123 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        0.425 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    106.288 ms
+  TCP:        local 10.0.0.242:43184 -> remote 150.65.7.130:80
+  First byte: 116.753 ms
+  Transfer:   3655.299 ms, 13332733 body bytes, 29.180 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        0.457 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    107.215 ms
+  TCP:        local 10.0.0.242:43186 -> remote 150.65.7.130:80
+  First byte: 307.653 ms
+  Transfer:   3982.261 ms, 13332733 body bytes, 26.784 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 106.288 ms
+Median connect time:  107.117 ms
+
+=== two at once  12:39:08 ===
+First pageload:
+Trial 1
+  DNS:        0.676 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    31.255 ms
+  TCP:        local 10.0.0.242:52418 -> remote 198.60.22.13:80
+  First byte: 31.166 ms
+  Transfer:   0.017 ms, 1198 body bytes, 574.546 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 31.255 ms
+Median connect time:  31.255 ms
+Second pageload:
+Trial 1
+  DNS:        1.957 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    31.360 ms
+  TCP:        local 10.0.0.242:52432 -> remote 198.60.22.13:80
+  First byte: 31.589 ms
+  Transfer:   0.015 ms, 1198 body bytes, 656.573 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 31.360 ms
+Median connect time:  31.360 ms
+First file:
+See http://www.debian.org/ for information about Debian GNU/Linux.
+Four Debian releases are available on the main site:
+
+Debian 11.11, or bullseye.  Access this release through dists/oldoldstable
+Debian 11.11 was released Saturday, 31st August 2024.
+
+Debian 12.15, or bookworm.  Access this release through dists/oldstable
+Debian 12.15 was released Saturday, 11th July 2026.
+
+Debian 13.7, or trixie.  Access this release through dists/stable
+Debian 13.7 was released Saturday, 12th September 2026.
+
+Testing, or forky.  Access this release through dists/testing.  The
+current tested development snapshot is named bookworm.  Packages which
+have been tested in unstable and passed automated tests propagate to
+this release.
+
+Unstable, or sid.  Access this release through dists/unstable.  The
+current development snapshot is named sid.  Untested candidate
+packages for future releases.
+
+Older releases of Debian are at http://archive.debian.org/debian-archive
+
+--- Other directories:
+doc             Debian documentation.
+indices         Various indices of the site.
+project         Experimental packages and other miscellaneous files.
+tools           Tools for creating boot disks and booting Linux.
+Second file:
+See http://www.debian.org/ for information about Debian GNU/Linux.
+Four Debian releases are available on the main site:
+
+Debian 11.11, or bullseye.  Access this release through dists/oldoldstable
+Debian 11.11 was released Saturday, 31st August 2024.
+
+Debian 12.15, or bookworm.  Access this release through dists/oldstable
+Debian 12.15 was released Saturday, 11th July 2026.
+
+Debian 13.7, or trixie.  Access this release through dists/stable
+Debian 13.7 was released Saturday, 12th September 2026.
+
+Testing, or forky.  Access this release through dists/testing.  The
+current tested development snapshot is named bookworm.  Packages which
+have been tested in unstable and passed automated tests propagate to
+this release.
+
+Unstable, or sid.  Access this release through dists/unstable.  The
+current development snapshot is named sid.  Untested candidate
+packages for future releases.
+
+Older releases of Debian are at http://archive.debian.org/debian-archive
+
+--- Other directories:
+doc             Debian documentation.
+indices         Various indices of the site.
+project         Experimental packages and other miscellaneous files.
+tools           Tools for creating boot disks and booting Linux.
+
+=== dns trace  12:39:08 ===
+Note: dig is not installed, so the DNS trace cannot run.
+
+=== done in 18 s, 0 failed ===
