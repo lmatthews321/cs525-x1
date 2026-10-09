@@ -1,0 +1,170 @@
+Script started on 2026-10-08 12:45:35-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ [7m./pageload -4 -n 3 http://ftp.jaist.ac.jp/debian/README[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./pageload -4 -n 3 http://ftp.jaist.ac.jp/debian/README
+[?2004lTrial 1
+  DNS:        56.780 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    149.387 ms
+  TCP:        local 172.31.203.59:50488 -> remote 150.65.7.130:80
+  First byte: 149.552 ms
+  Transfer:   0.037 ms, 1198 body bytes, 261.586 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 2
+  DNS:        42.866 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    149.480 ms
+  TCP:        local 172.31.203.59:50492 -> remote 150.65.7.130:80
+  First byte: 149.694 ms
+  Transfer:   0.012 ms, 1198 body bytes, 785.445 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Trial 3
+  DNS:        149.304 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    149.415 ms
+  TCP:        local 172.31.203.59:50506 -> remote 150.65.7.130:80
+  First byte: 190.505 ms
+  Transfer:   0.011 ms, 1198 body bytes, 833.681 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 149.387 ms
+Median connect time:  149.415 ms
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ dig [7m/ftp.jaist.ac.jp[27m/ftp.jaist.ac.jp[C[1Pftp.jaist.ac.jp
+[?2004l
+; <<>> DiG 9.18.39-0ubuntu0.24.04.7-Ubuntu <<>> ftp.jaist.ac.jp
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30310
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1410
+;; QUESTION SECTION:
+;ftp.jaist.ac.jp.		IN	A
+
+;; ANSWER SECTION:
+ftp.jaist.ac.jp.	7170	IN	A	150.65.7.130
+
+;; Query time: 47 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Thu Oct 08 12:46:40 MDT 2026
+;; MSG SIZE  rcvd: 60
+
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ dig ftp.jaist.ac.jp./pageload -4 -n 3 http://ftp.jaist.ac.jp/debian/README[1P http://ftp.jaist.ac.jp/debian/README[1Phttp://ftp.jaist.ac.jp/debian/README[1P http://ftp.jaist.ac.jp/debian/README[1P http://ftp.jaist.ac.jp/debian/README[1Phttp://ftp.jaist.ac.jp/debian/README[1P http://ftp.jaist.ac.jp/debian/README[1P http://ftp.jaist.ac.jp/debian/README- http://ftp.jaist.ac.jp/debian/READMEo http://ftp.jaist.ac.jp/debian/README
+[?2004lUsage: pageload [-4 | -6] [-n trials] [-o file] http://host[:port][/path]
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ./pageload -o http://ftp.jaist.ac.jp/debian/README[K./pageload -o http://ftp.jaist.ac.jp/debian/README[Cohttp://ftp.jaist.ac.jp/debian/READMEuhttp://ftp.jaist.ac.jp/debian/READMEthttp://ftp.jaist.ac.jp/debian/README[1Phttp://ftp.jaist.ac.jp/debian/README[1Phttp://ftp.jaist.ac.jp/debian/README[1Phttp://ftp.jaist.ac.jp/debian/READMEphttp://ftp.jaist.ac.jp/debian/READMEghttp://ftp.jaist.ac.jp/debian/READMEohttp://ftp.jaist.ac.jp/debian/READMEuhttp://ftp.jaist.ac.jp/debian/READMEthttp://ftp.jaist.ac.jp/debian/README.http://ftp.jaist.ac.jp/debian/READMEthttp://ftp.jaist.ac.jp/debian/READMExhttp://ftp.jaist.ac.jp/debian/READMEthttp://ftp.jaist.ac.jp/debian/README http://ftp.jaist.ac.jp/debian/README
+[?2004lTrial 1
+  DNS:        201.659 ms (ftp.jaist.ac.jp -> 150.65.7.130)
+  Connect:    138.602 ms
+  TCP:        local 172.31.203.59:34642 -> remote 150.65.7.130:80
+  First byte: 138.955 ms
+  Transfer:   0.048 ms, 1198 body bytes, 199.667 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 138.602 ms
+Median connect time:  138.602 ms
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ cat pgout.txt 
+[?2004lSee http://www.debian.org/ for information about Debian GNU/Linux.
+Four Debian releases are available on the main site:
+
+Debian 11.11, or bullseye.  Access this release through dists/oldoldstable
+Debian 11.11 was released Saturday, 31st August 2024.
+
+Debian 12.15, or bookworm.  Access this release through dists/oldstable
+Debian 12.15 was released Saturday, 11th July 2026.
+
+Debian 13.7, or trixie.  Access this release through dists/stable
+Debian 13.7 was released Saturday, 12th September 2026.
+
+Testing, or forky.  Access this release through dists/testing.  The
+current tested development snapshot is named bookworm.  Packages which
+have been tested in unstable and passed automated tests propagate to
+this release.
+
+Unstable, or sid.  Access this release through dists/unstable.  The
+current development snapshot is named sid.  Untested candidate
+packages for future releases.
+
+Older releases of Debian are at http://archive.debian.org/debian-archive
+
+--- Other directories:
+doc             Debian documentation.
+indices         Various indices of the site.
+project         Experimental packages and other miscellaneous files.
+tools           Tools for creating boot disks and booting Linux.
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx probe mirrors.xmission.com 80
+[?2004lconnect=0.079395 total=0.180005 code=200
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx pagelo[K[K[K[K[K[Kmkdir -p cs525-x1
+[?2004l[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ scp -r pageload.c Makefile .git onyx:cs525-x1
+[?2004lpageload.c                                                                              0%    0     0.0KB/s   --:-- ETApageload.c                                                                            100%   27KB   1.8MB/s   00:00    
+Makefile                                                                                0%    0     0.0KB/s   --:-- ETAMakefile                                                                              100%  175    22.4KB/s   00:00    
+config                                                                                  0%    0     0.0KB/s   --:-- ETAconfig                                                                                100%  130    18.9KB/s   00:00    
+description                                                                             0%    0     0.0KB/s   --:-- ETAdescription                                                                           100%   73    10.8KB/s   00:00    
+HEAD                                                                                    0%    0     0.0KB/s   --:-- ETAHEAD                                                                                  100%   23     3.5KB/s   00:00    
+applypatch-msg.sample                                                                   0%    0     0.0KB/s   --:-- ETAapplypatch-msg.sample                                                                 100%  478    69.6KB/s   00:00    
+commit-msg.sample                                                                       0%    0     0.0KB/s   --:-- ETAcommit-msg.sample                                                                     100% 1972   286.4KB/s   00:00    
+fsmonitor-watchman.sample                                                               0%    0     0.0KB/s   --:-- ETAfsmonitor-watchman.sample                                                             100% 4611   701.0KB/s   00:00    
+post-update.sample                                                                      0%    0     0.0KB/s   --:-- ETApost-update.sample                                                                    100%  189    28.7KB/s   00:00    
+pre-applypatch.sample                                                                   0%    0     0.0KB/s   --:-- ETApre-applypatch.sample                                                                 100%  424    68.4KB/s   00:00    
+pre-commit.sample                                                                       0%    0     0.0KB/s   --:-- ETApre-commit.sample                                                                     100% 1649   240.1KB/s   00:00    
+pre-merge-commit.sample                                                                 0%    0     0.0KB/s   --:-- ETApre-merge-commit.sample                                                               100%  416    59.0KB/s   00:00    
+pre-push.sample                                                                         0%    0     0.0KB/s   --:-- ETApre-push.sample                                                                       100% 1374   161.6KB/s   00:00    
+pre-rebase.sample                                                                       0%    0     0.0KB/s   --:-- ETApre-rebase.sample                                                                     100% 4898   658.5KB/s   00:00    
+pre-receive.sample                                                                      0%    0     0.0KB/s   --:-- ETApre-receive.sample                                                                    100%  544    68.2KB/s   00:00    
+prepare-commit-msg.sample                                                               0%    0     0.0KB/s   --:-- ETAprepare-commit-msg.sample                                                             100% 1492   208.1KB/s   00:00    
+push-to-checkout.sample                                                                 0%    0     0.0KB/s   --:-- ETApush-to-checkout.sample                                                               100% 2783   409.9KB/s   00:00    
+sendemail-validate.sample                                                               0%    0     0.0KB/s   --:-- ETAsendemail-validate.sample                                                             100% 2308   332.2KB/s   00:00    
+update.sample                                                                           0%    0     0.0KB/s   --:-- ETAupdate.sample                                                                         100% 3650   503.4KB/s   00:00    
+exclude                                                                                 0%    0     0.0KB/s   --:-- ETAexclude                                                                               100%  240    40.3KB/s   00:00    
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 && make onyx'
+[?2004lmake: *** No rule to make target 'onyx'.  Stop.
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 && make onyx'[1P'[1P'[1P'[1P'[1P'
+[?2004lcc -O2 -std=c11 -Wall -Wextra -o pageload pageload.c
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyy[Kx 'cd cs525-x1 $$ [7m./pageload -4 http://mirrors.xmission.com[27m./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+[?2004lbash: line 1: cd: too many arguments
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 $$ ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@&& ./pageload -4 http://mirrors.xmission.com' [A]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lTrial 1
+  DNS:        33.430 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    49.815 ms
+  TCP:        local 132.178.227.11:33416 -> remote 198.60.22.13:80
+  First byte: 50.893 ms
+  Transfer:   49.626 ms, 15155 body bytes, 2.443 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 49.815 ms
+Median connect time:  49.815 ms
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 && ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$$
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C&& make'[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C onyx'cp -r pageload.c Makefile .git onyx:cs525-x1[10Psh onyx 'cd cs525-x1 && make onyx'cp -r pageload.c Makefile .git onyx:cs525-x1[19Psh onyx mkdir -p cs525-x1probe mirrors.xmission.com 80
+[?2004lconnect=0.146687 total=0.247220 code=200
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx probe mirrors.xmission.com 80
+[?2004lconnect=0.082800 total=0.185512 code=200
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx probe mirrors.xmission.com 80'cd cs525-x1 && ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+[?2004lTrial 1
+  DNS:        33.485 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    49.896 ms
+  TCP:        local 132.178.227.11:46464 -> remote 198.60.22.13:80
+  First byte: 50.775 ms
+  Transfer:   49.437 ms, 15155 body bytes, 2.452 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 49.896 ms
+Median connect time:  49.896 ms
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 && ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+[?2004lTrial 1
+  DNS:        32.041 ms (mirrors.xmission.com -> 198.60.22.13)
+  Connect:    49.881 ms
+  TCP:        local 132.178.227.11:59576 -> remote 198.60.22.13:80
+  First byte: 50.485 ms
+  Transfer:   49.621 ms, 15155 body bytes, 2.443 Mbit/s
+  Status:     HTTP/1.1 200 OK
+Minimum connect time: 49.881 ms
+Median connect time:  49.881 ms
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ ssh onyx 'cd cs525-x1 && ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pprobe mirrors.xmission.com 80
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lconnect=0.082099 total=0.182384 code=200
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ x[Kexit[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-10-08 13:10:26-06:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-10-08 13:14:45-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ exitssh onyx probe mirrors.xmission.com 80'cd cs525-x1 && ./pageload -4 http://mirrors.xmission.com' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P http://mirrors.xmission.com'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6 http://mirrors.xmission.com' [A]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lpageload: connect: Network is unreachable
+pageload: trial 1 failed
+[?2004h]0;lmatt@HomeCP: ~/BSU_Cyber/Computer Networks/cs525-x1[01;32mlmatt@HomeCP[00m:[01;34m~/BSU_Cyber/Computer Networks/cs525-x1[00m$ exit
+[?2004lexit
+
+Script done on 2026-10-08 13:16:44-06:00 [COMMAND_EXIT_CODE="1"]
